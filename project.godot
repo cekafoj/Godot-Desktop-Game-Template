@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Desktop Template Godot - Ceka"
+run/main_scene="res://World.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 0)
+boot_splash/show_image=false
+config/icon="uid://qc1xbqeluq7o"
+
+[autoload]
+
+WindowSetup="*res://autoload/WindowSetup.gd"
+
+[display]
+
+window/size/viewport_width=300
+window/size/viewport_height=300
+window/size/borderless=true
+window/size/transparent=true
+window/subwindows/embed_subwindows=false
+window/per_pixel_transparency/allowed=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 0)
+viewport/transparent_background=true
